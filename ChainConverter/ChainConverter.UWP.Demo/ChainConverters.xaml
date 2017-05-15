@@ -1,0 +1,19 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ChainConverter.UWP.Demo"
+    xmlns:conv="using:ChainConverter.UWP.Converters"
+    xmlns:resolvers="using:ChainConverter.UWP.Resolvers">
+    <ResourceDictionary x:Key="convertersDic" Source="Converters.xaml" />
+
+    <conv:ChainConverter x:Key="ChainConv1">
+        <conv:ChainConverter.Chain>
+            <conv:NegationConverter  />
+        </conv:ChainConverter.Chain>
+        <conv:ChainConverter.Resolvers>
+            <resolvers:ConverterResolver ConverterKey="BoolToVisibilityConverter" Source="{StaticResource convertersDic}" />
+        </conv:ChainConverter.Resolvers>
+    </conv:ChainConverter>
+
+
+</ResourceDictionary>
