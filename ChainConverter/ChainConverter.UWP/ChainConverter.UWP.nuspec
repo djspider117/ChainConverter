@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>ChainConverter.UWP</id>
+    <version>1.0.0</version>
+    <title>ChainConverter</title>
+    <authors>Ionut Popovici</authors>
+    <owners>Ionut Popovici</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A Chain Converter object that allows multiple converters on the same binding.</description>    
+    <copyright>Copyright 2017</copyright>
+    <tags>UWP Converter</tags>
+  </metadata>
+  
+  <files>
+	<file src="bin\ARM\Release\ChainConverter.UWP.dll" target="lib\win10-arm"/>
+	<file src="bin\x86\Release\ChainConverter.UWP.dll" target="lib\win10-x86"/>
+	<file src="bin\x64\Release\ChainConverter.UWP.dll" target="lib\win10-x64"/>
+	
+	<file src="bin\ARM\Release\ChainConverter.UWP.pdb" target="lib\win10-arm"/>
+	<file src="bin\x86\Release\ChainConverter.UWP.pdb" target="lib\win10-x86"/>
+	<file src="bin\x64\Release\ChainConverter.UWP.pdb" target="lib\win10-x64"/>
+	
+	<file src="bin\ARM\Release\ChainConverter.UWP.pri" target="lib\win10-arm"/>
+	<file src="bin\x86\Release\ChainConverter.UWP.pri" target="lib\win10-x86"/>
+	<file src="bin\x64\Release\ChainConverter.UWP.pri" target="lib\win10-x64"/>
+  </files>
+</package>
